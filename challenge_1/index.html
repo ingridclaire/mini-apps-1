@@ -2,6 +2,11 @@
 <html>
 <head>
   <style>
+    h1 {
+      margin-left: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     table, tr, td {
       border: 1px solid black;
     }
@@ -14,6 +19,30 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    table {
+      margin-bottom: 15px;
+    }
+
+    #winner {
+      margin-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      color: blueviolet;
+      visibility: hidden;
+      display: block;
+    }
+
+    button {
+      margin-left: 20px;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      visibility: hidden;
+      border-radius: 5px;
+    }
+
   </style>
   <title>Tic Tac Toe</title>
 </head>
@@ -21,21 +50,23 @@
   <h1>Tic Tac Toe</h1>
   <table>
     <tr>
-      <td id="topL"></td>
-      <td id="topM"></td>
-      <td id="topR"></td>
+      <td id="TL"></td>
+      <td id="TM"></td>
+      <td id="TR"></td>
     </tr>
     <tr>
-      <td id="midL"></td>
-      <td id="midM"></td>
-      <td id="midR"></td>
+      <td id="ML"></td>
+      <td id="MM"></td>
+      <td id="MR"></td>
     </tr>
     <tr>
-      <td id="bottomL"></td>
-      <td id="bottomM"></td>
-      <td id="bottomR"></td>
+      <td id="BL"></td>
+      <td id="BM"></td>
+      <td id="BR"></td>
     </tr>
   </table>
+  <span id="winner"><strong></strong></span>
+  <button>Play Again</button>
   <script src="app.js"></script>
 </body>
 </html>
