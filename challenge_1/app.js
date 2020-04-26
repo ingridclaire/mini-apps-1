@@ -1,5 +1,3 @@
-console.log('I am building a tic tac toe game!');
-
 //Data
 var boxes = ['TL', 'TM', 'TR', 'ML', 'MM', 'MR', 'BL', 'BM', 'BR'];
 
@@ -19,7 +17,17 @@ var previous = '';
 
 var boxesPlayed = 0
 
-var xPlays = {top: 0, midRow: 0, bottom: 0, left: 0, midCol: 0, right: 0, leftDiag: 0, rightDiag: 0};
+var xPlays = {
+  top: 0,
+  midRow: 0,
+  bottom: 0,
+  left: 0,
+  midCol: 0,
+  right: 0,
+  leftDiag: 0,
+  rightDiag: 0
+};
+
 var oPlays = {top: 0, midRow: 0, bottom: 0, left: 0, midCol: 0, right: 0, leftDiag: 0, rightDiag: 0};
 
 
